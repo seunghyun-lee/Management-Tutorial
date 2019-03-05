@@ -38,7 +38,7 @@ class CustomerDelete extends React.Component {
     render() {
         return (            
             <div>
-                <Button variant="contained" color="secondary" onClick={this.hndleClickOpen}>DELETE</Button>
+                <Button variant="contained" color="secondary" onClick={this.handleClickOpen}>DELETE</Button>
                 <Dialog open={this.state.open} onClose={this.handleClose}>
                     <DialogTitle onClose={this.handleClose}>
                         Warning Delete!
@@ -49,8 +49,8 @@ class CustomerDelete extends React.Component {
                         </Typography>
                     </DialogContent>
                     <DialogActions>
-                        <Button variant="contained" color="primary" onClick={(e) => {this.deleteCustomer(this.props.id)}}>DELETE</Button>
-                        <Button variant="outlined" color="primary" onClick={this.handleClose}>DELETE</Button>
+                        <Button variant="contained" color="primary" onClick={(e) => {this.deleteCustomer(this.props.id)}}>삭제</Button>
+                        <Button variant="outlined" color="primary" onClick={this.handleClose}>취소</Button>
                     </DialogActions>
                 </Dialog>
             </div>
